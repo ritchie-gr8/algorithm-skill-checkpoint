@@ -1,5 +1,11 @@
 function findStudentById(students, id) {
-  // Your code here
+  if (!students || students.length === 0) return null
+
+  for(let student of students) {
+    if (student.id === id) return student
+  }
+
+  return null
 }
 
 // Test case
